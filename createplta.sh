@@ -61,7 +61,7 @@ class ApiController extends Controller
     {
         $user = auth()->user();
         if ($user->id !== 1 && (int) $user->owner_id !== (int) $user->id) {
-            abort(403, "🜲 t.me/tristanalways, Bot Protect - Akses Ditolak. ⚠️");
+            abort(403, "🜲 t.me/tristanalways, BOT PROTECT - AKSES DI TOLAK BRO. ⚠️");
         }
 
         $resources = AdminAcl::getResourceList();
